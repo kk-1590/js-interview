@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="element1">
+      <h5>element1</h5>
+      <div id="element2">
+        <h5>element2</h5>
+        <div id="element3">
+          <h5>element3</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.getElementById("element1").addEventListener("click", function (e) {
+      console.log("Bubbling", this.id);
+    });
+
+    document.getElementById("element2").addEventListener("click", function (e) {
+      console.log("Bubbling", this.id);
+    });
+
+    document.getElementById("element3").addEventListener("click", function (e) {
+      console.log("Bubbling", this.id);
+    });
+
+    document.getElementById("element1").addEventListener(
+      "click",
+      function (e) {
+        console.log("Capturing", this.id);
+      },
+      true
+    );
+
+    document.getElementById("element2").addEventListener(
+      "click",
+      function (e) {
+        console.log("Capturing", this.id);
+      },
+      true
+    );
+
+    document.getElementById("element3").addEventListener(
+      "click",
+      function (e) {
+        console.log("Capturing", this.id);
+      },
+      true
+    );
+  </script>
+</html>

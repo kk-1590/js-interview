@@ -1,0 +1,38 @@
+#element1 {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+#element1:hover {
+  background-color: lightgray;
+}
+
+#element2 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+#element2:hover {
+  background-color: lightgreen;
+}
+
+#element3 {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+#element3:hover {
+  background-color: lightsalmon;
+}
